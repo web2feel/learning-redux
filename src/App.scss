@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+.App {
+  max-width:960px;
+  min-height: 100vh;
+  margin:0px auto;
+  border:2px dashed red;
+  display:flex;
+  flex-direction: column;
+}
+.header,
+.main,
+.footer{
+  border:2px dashed blue;
+  margin:20px;
+  padding:10px;
+}
+.main{
+  flex:1;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
+
+.counter,
+.aside{
+  border:2px dashed green;
+  margin:20px;
+  padding:10px;
+}
+.footer{
+  text-align:center;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
